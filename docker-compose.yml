@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  pastebin:
+    image: ylianach/copypaste:latest
+    container_name: pastebin
+    restart: always
+    ports:
+      - "5000:5000"
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge
