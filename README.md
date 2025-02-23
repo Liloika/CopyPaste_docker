@@ -9,8 +9,7 @@ A simple service for storing text snippets. Built with Flask and Docker.
 
 ## Requirements
 - Install [Docker](https://docs.docker.com/get-docker/).
-- Install [Docker Compose](https://docs.docker.com/compose/install/).
 
 ## Start the containers
 ```sh
-docker-compose up -d
+docker compose up --build
