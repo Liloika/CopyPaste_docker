@@ -1,10 +1,10 @@
-FROM python:3.9
+FROM python:3.13
 
 WORKDIR /app
 
-COPY main.py requirements.txt ./
+COPY main.py ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir flask==2.2.2
 
 EXPOSE 5000
 
